@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/scheduler.js"></script>
+    <script defer src="/scheduler.js"></script>
+
 </head>
 <body>
     <h1> Appointment Scheduler</h1>
-     <form id="appointment-form" action="/submit-order" method="post">
+     <form id="appointment-form" action="/appointments" method="post">
         <fieldset>
             <legend>Appointment Details</legend>
              <label for="fname">First Name:<span class="error" id="err-fname"></span></label>
@@ -23,7 +24,7 @@
             <!--Submit button-->
             <button type="submit" id="submit-button">Submit</button>
         </fieldset>
+        </form>
      
-    
 </body>
 </html>

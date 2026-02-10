@@ -18,3 +18,7 @@ document.getElementById("appointment-form").onsubmit = () => {
 
     return isValid; 
 };
+function clearErrors() {
+  document.getElementById("err-fname").textContent = "";
+  document.getElementById("err-lname").textContent = "";
+}
