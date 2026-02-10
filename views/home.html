@@ -11,10 +11,10 @@
      <form id="appointment-form" action="/submit-order" method="post">
         <fieldset>
             <legend>Appointment Details</legend>
-             <label for="fname">First Name:</label>
+             <label for="fname">First Name:<span class="error" id="err-fname"></span></label>
             <input type="text" id="fname" name="fname">
 
-             <label for="lname">Last Name:</label>
+             <label for="lname">Last Name:<span class="error" id="err-lname"></span></label>
             <input type="text" id="lname" name="lname">
 
             <input type="date" id="date" name="date" required>
